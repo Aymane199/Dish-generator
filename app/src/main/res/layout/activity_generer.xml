@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorAccent">
+
+    <TextView android:text="ingrédients"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/titre"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/showSelected"
+        android:text="Générer"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_button"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_below="@id/titre"
+        android:layout_above="@id/showSelected">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/list1"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout >

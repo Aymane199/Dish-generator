@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_profile"
+    android:background="@color/colorAccent">
+
+     <TextView
+         android:id="@+id/titre"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:layout_margin="5dp"
+         android:text="PROFILE"
+         android:textSize="30dp"
+         android:layout_centerHorizontal="true"
+         />
+
+     <LinearLayout
+         android:layout_width="213dp"
+         android:layout_height="318dp"
+         android:layout_centerInParent="true"
+         android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true"
+         android:orientation="vertical">
+
+
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              android:orientation="horizontal">
+
+               <TextView
+                   android:layout_width="100dp"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="5dp"
+                   android:text="nom" />
+
+               <TextView
+                   android:id="@+id/edName"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="5dp"
+                   android:hint="Name" />
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              android:orientation="horizontal">
+
+               <TextView
+                   android:layout_width="100dp"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="5dp"
+                   android:text="age" />
+
+               <TextView
+                   android:id="@+id/edAge"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="5dp"
+                   android:hint="Age" />
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              android:orientation="horizontal">
+
+               <TextView
+                   android:layout_width="100dp"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="5dp"
+                   android:text="sex" />
+
+               <TextView
+                   android:id="@+id/edSexe"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="5dp"
+                   android:hint="sexe"
+
+                   />
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              android:orientation="horizontal">
+
+               <TextView
+                   android:layout_width="100dp"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="5dp"
+                   android:text="username" />
+
+               <TextView
+                   android:id="@+id/edUsername"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="5dp"
+                   android:hint="Username" />
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              android:orientation="horizontal">
+
+               <TextView
+                   android:layout_width="100dp"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="5dp"
+                   android:text="nb repas creer" />
+
+               <TextView
+                   android:id="@+id/ednbrepas"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="5dp"
+                   android:hint="Username" />
+
+          </LinearLayout>
+
+
+          <Button
+              android:id="@+id/btnCancel"
+              android:layout_width="120dp"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:layout_marginTop="100dp"
+              android:background="@color/trans"
+              android:text="Retour" />
+
+
+     </LinearLayout>
+
+</RelativeLayout>

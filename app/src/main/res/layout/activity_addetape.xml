@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/colorAccent">
+
+    <TextView android:text="Etapes"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/titreetape"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimaryDark1"
+        />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/titreetape">
+        <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:id="@+id/pic"
+        android:onClick="buttonClicked"
+        android:src="@drawable/choose_up"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/txt1"
+            android:hint="nom"
+            android:layout_margin="10dp"/>
+    </LinearLayout >
+
+    <EditText
+        android:id="@+id/mydesc"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:inputType="text|textMultiLine"
+        android:gravity="top"
+        android:hint="description"
+        android:layout_margin="10dp"
+        android:layout_below="@id/linear1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+
+        <Button
+            android:id="@+id/nextStep"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_button"
+            android:onClick="buttonClicked"
+            android:text="valider l'etape" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:id="@+id/exit"
+            android:onClick="buttonClicked"
+            android:text="Quiter"
+            android:background="@drawable/rounded_button"
+            android:layout_margin="10dp"
+            />
+
+    </LinearLayout>
+ </RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/colorAccent">
+
+
+
+  <TextView android:text="Dish Generator"
+      android:layout_gravity="center"
+      android:textSize="45dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/titre"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="10dp"
+      android:textColor="@color/colorPrimaryDark1"
+     />
+  <TextView android:text="LOGIN"
+      android:layout_gravity="center"
+      android:textSize="30dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/login"
+      android:layout_above="@id/center"
+      android:layout_centerInParent="true"
+      android:gravity="center"
+      android:textColor="@color/colorPrimaryDark1"/>
+
+  <LinearLayout
+      android:layout_width="200dp"
+      android:layout_height="200dp"
+      android:orientation="vertical"
+      android:layout_centerInParent="true"
+      android:gravity="center"
+      android:id="@+id/center"
+      >
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="Username"
+          android:id="@+id/edUsername"
+          />
+
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="Password"
+          android:id="@+id/edPassword"
+          android:inputType="textPassword"
+          />
+  </LinearLayout>
+
+  <Button
+      android:layout_width="200dp"
+      android:layout_height="wrap_content"
+      android:text="se connecter"
+      android:id="@+id/btnConnect"
+      android:layout_below="@id/center"
+      android:layout_centerHorizontal="true"
+      android:layout_centerVertical="true"
+      android:gravity="center"
+      android:background="@drawable/rounded_button"/>
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="SignIn"
+      android:id="@+id/btnSignIn"
+      android:layout_below="@id/btnConnect"
+      android:layout_centerHorizontal="true"
+      android:layout_centerVertical="true"
+      android:gravity="center"
+      android:background="@color/trans"
+      />
+
+
+</RelativeLayout >

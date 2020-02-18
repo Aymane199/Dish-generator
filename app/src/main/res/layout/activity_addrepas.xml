@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/colorAccent"
+    >
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_check_black"
+        android:layout_alignParentRight="true"
+        android:id="@+id/save"
+        />
+
+    <TextView android:text="Ajouter un plat"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/titre"
+        android:layout_centerHorizontal="true"
+        />
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_below="@id/titre"
+
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/pic"
+        android:src="@drawable/choose_up"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/txt1"
+        android:hint="nom"
+        android:layout_margin="10dp"
+        />
+    </LinearLayout >
+
+
+
+
+    <TextView android:text="sélectionner les ingrédients"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/list1"/>
+
+    </LinearLayout>
+
+</LinearLayout >
+</RelativeLayout >

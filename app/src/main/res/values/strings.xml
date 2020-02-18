@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Dish Generator</string>
+    <string name="title_activity_generer">activity_generer</string>
+</resources>

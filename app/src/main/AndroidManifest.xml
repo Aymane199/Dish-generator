@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mic.projet_v3">
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_dish_generator"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+       >
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity_gestion_user" />
+        <activity android:name=".activity_gestion_ingredient" />
+        <activity
+            android:name=".activity_generer"
+            android:label="@string/title_activity_generer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity_resultat" />
+        <activity android:name=".activity_addrepas" />
+        <activity android:name=".activity_addetape" />
+        <activity android:name=".activity_details_repas" />
+        <activity android:name=".activity_show_ingredient" />
+        <activity android:name=".activity_show_etapes" />
+        <activity android:name=".activity_signin" />
+        <activity android:name=".activity_menu" />
+        <activity android:name=".activity_profile"></activity>
+    </application>
+
+</manifest>

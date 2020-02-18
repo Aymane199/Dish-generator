@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorAccent">
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/profile"
+        android:id="@+id/profile"
+        android:layout_toRightOf="@id/createur"
+        android:layout_below="@id/titre"
+        />
+
+    <TextView android:text="repas"
+        android:layout_marginBottom="40dp"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/titre"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimaryDark1"
+        />
+
+    <TextView
+        android:text="createur"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/createur"
+        android:layout_below="@id/titre"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/pic"
+        android:src="@drawable/choose_up"
+        android:layout_centerInParent="true"/>
+
+
+
+
+
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btningredient"
+            android:text="ingredients"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/rounded_button"
+            />
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnetapes"
+            android:text="etapes"
+            android:background="@drawable/rounded_button"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="40dp"
+            />
+
+
+
+
+</RelativeLayout >

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+
+    android:background="@color/colorAccent">
+
+    <TextView android:text="Ajouter un ingrédient"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/titre"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:onClick="buttonClicked"
+            android:id="@+id/pic"
+            android:src="@drawable/choose_up"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/txt1"
+            android:hint="nom de l'ingrédient"
+            android:layout_margin="10dp"
+            android:nextFocusUp="@id/txt1"
+            android:nextFocusLeft="@id/txt1" />
+    </LinearLayout >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/save"
+            android:onClick="buttonClicked"
+            android:text="Ajouter"
+            android:background="@drawable/rounded_button"/>
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/display"
+            android:onClick="buttonClicked"
+            android:text="Afficher"
+            android:background="@drawable/rounded_button"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/list1"/>
+
+    </LinearLayout>
+
+</LinearLayout >

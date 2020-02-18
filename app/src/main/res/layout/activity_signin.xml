@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/colorAccent">
+
+    <TextView android:text="SIGN IN"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/titre"
+        android:layout_margin="5dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nom"
+        android:id="@+id/edName"
+        android:layout_margin="5dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Age"
+        android:id="@+id/edAge"
+        android:inputType="numberSigned"
+        android:layout_margin="5dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="sexe"
+        android:id="@+id/edSexe"
+        android:layout_margin="5dp"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:id="@+id/edUsername"
+        android:layout_margin="5dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:id="@+id/edPassword"
+        android:inputType="textPassword"
+        android:layout_margin="5dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirme Password"
+        android:id="@+id/edPassword2"
+        android:inputType="textPassword"
+        android:layout_margin="5dp"
+        />
+
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:text="SignUp"
+        android:background="@drawable/rounded_button"
+        />
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Annuler"
+        android:id="@+id/btnCancel"
+        android:layout_gravity="center"
+        android:background="@color/trans"
+        />
+
+
+</LinearLayout >
